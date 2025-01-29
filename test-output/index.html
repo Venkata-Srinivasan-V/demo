@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -114,6 +114,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="TestCases.Logintest" class="method navigator-link" hash-for-method="credentialsUsingJson({password=venkBevi, email=venkatbevi@gmail.com})">credentialsUsingJson({password=venkBevi, email=venkatbevi@gmail.com})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestCases.Logintest" class="method navigator-link" hash-for-method="getDataFromExcel">getDataFromExcel</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -156,6 +161,13 @@
                   </a> <!-- credentialsUsingJson({password=venkBevi, email=venkatbevi@gmail.com}) -->
                   <span class="method-name">credentialsUsingJson</span>
                   <span class="parameters">({password=venkBevi, email=venkatbevi@gmail.com})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getDataFromExcel">
+                  </a> <!-- getDataFromExcel -->
+                  <span class="method-name">getDataFromExcel</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -214,19 +226,23 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'credentials')
 data.setCell(0, 2, 'TestCases.Logintest')
-data.setCell(0, 3, 6887);
+data.setCell(0, 3, 5939);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'credentialsUsingJson')
+data.setCell(1, 1, 'getDataFromExcel')
 data.setCell(1, 2, 'TestCases.Logintest')
-data.setCell(1, 3, 3475);
+data.setCell(1, 3, 2699);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'credentialsUsingJson')
 data.setCell(2, 2, 'TestCases.Logintest')
-data.setCell(2, 3, 3404);
+data.setCell(2, 3, 2399);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'credentialsUsingJson')
+data.setCell(3, 2, 'TestCases.Logintest')
+data.setCell(3, 3, 2399);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -264,19 +280,23 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="test-method">
                 <span class="method-name">credentials(revathi1@gmail.com, Seenithala@20)</span>
-                <span class="method-start">3493 ms</span>
+                <span class="method-start">3914 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">credentialsUsingJson({password=venkBevi, email=venkatbevi@gmail.com})</span>
-                <span class="method-start">10712 ms</span>
+                <span class="method-start">10169 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">credentialsUsingJson({password=venkBevi1, email=venkatbevi1gmail.com})</span>
-                <span class="method-start">14124 ms</span>
+                <span class="method-start">12570 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getDataFromExcel</span>
+                <span class="method-start">14971 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-suite after">
                 <span class="method-name">closeDriver</span>
-                <span class="method-start">17641 ms</span>
+                <span class="method-start">17688 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

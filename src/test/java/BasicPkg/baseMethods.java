@@ -9,6 +9,8 @@ import java.util.List;
 import java.util.Properties;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -70,6 +72,16 @@ public class baseMethods {
 		
 		System.out.println(Hashdata);
 		return Hashdata;
+	}
+	
+	public String excelData(int rowint, int colint) throws IOException
+	{
+		File file= new File("C://Users//seeni//eclipse-workspace//DDtrain//data.xlsx");
+		FileInputStream fis = new FileInputStream(file);
+		XSSFWorkbook workbook= new XSSFWorkbook(fis);
+		XSSFSheet sheet= workbook.getSheet("Sheet1");
+		String value= sheet.getRow(rowint).getCell(colint).getStringCellValue();
+		return value;
 	}
 	
 	@AfterSuite

@@ -31,9 +31,9 @@ public class Logintest extends baseMethods {
 		
 		// using parameter testng for data
 		login.submit(emailParameter, passwordParameter);
-		Thread.sleep(1500);
+		Thread.sleep(1000);
 		login.clearCredentials();
-		Thread.sleep(1500);
+		Thread.sleep(1000);
 		
 		
 	}
@@ -41,12 +41,24 @@ public class Logintest extends baseMethods {
 	@Test(dataProvider ="jsonInputdata")
 	public void credentialsUsingJson(HashMap<String, String> json) throws InterruptedException
 	{
+		// using json file for  data
 		System.out.println("entered json file execution");
 		loginPage login= new loginPage(driver);
 		//using json file
 		login.submit(json.get("email"), json.get("password"));
-		Thread.sleep(1500);
+		Thread.sleep(1000);
 		login.clearCredentials();
+		Thread.sleep(1000);
+		
+	}
+	@Test
+	public  void getDataFromExcel() throws IOException, InterruptedException
+	{
+		loginPage login= new loginPage(driver);
+		//using excel file
+		String email=excelData(1,1);
+		String password=excelData(2,1);
+		login.submit(email,password);
 		Thread.sleep(1500);
 		
 	}
