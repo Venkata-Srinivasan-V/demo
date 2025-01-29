@@ -49,6 +49,7 @@ public class Logintest extends baseMethods {
 		Thread.sleep(1000);
 		login.clearCredentials();
 		Thread.sleep(1000);
+		//hehehe
 		
 	}
 	@Test
